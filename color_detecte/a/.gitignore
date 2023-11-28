@@ -1,3 +1,4 @@
 logs/*
 build/*
-!logs/gitkeep
+!logs/logkeep
+!build/buildkeep
