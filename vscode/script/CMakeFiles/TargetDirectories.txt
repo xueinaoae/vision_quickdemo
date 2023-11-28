@@ -1,3 +1,0 @@
-/home/mayuqi/桌面/vscode/script/CMakeFiles/rebuild_cache.dir
-/home/mayuqi/桌面/vscode/script/CMakeFiles/edit_cache.dir
-/home/mayuqi/桌面/vscode/script/CMakeFiles/myq.dir

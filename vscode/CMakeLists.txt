@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.15)
-project(myq)
-file(GLOB_RECURSE src ${CMAKE_CURRENT_SOURCE_DIR}/src/vison_demo/src/*.cpp  ${CMAKE_CURRENT_SOURCE_DIR}/src/vision_demo/include/*.h ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-add_executable(myq ${src})
-find_package(OpenCV REQUIRED)
-target_link_libraries(${PROJECT_NAME} PUBLIC ${OpenCV_LIBS})
