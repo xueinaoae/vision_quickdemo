@@ -18,6 +18,6 @@ glogcreate::glogcreate(char* program){
 glogcreate::~glogcreate(){
         google::ShutdownGoogleLogging();
     }
-}
+}//namespace GLOG::configure
 
 

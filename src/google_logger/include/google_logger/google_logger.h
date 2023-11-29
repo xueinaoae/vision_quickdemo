@@ -12,4 +12,4 @@ public:
     ~glogcreate();
 
 };
-}
+}//namespace GlOG::configur

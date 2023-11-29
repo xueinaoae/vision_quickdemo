@@ -12,8 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/detector/include/detector"
   "../src/google_logger/include/google_logger"
+  "../src/detector/include/detector"
   "/usr/local/include/opencv4"
   )
 

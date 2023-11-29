@@ -10,69 +10,59 @@ using namespace std;
 
 namespace detect::color{
     std::string To_string(const ColorType &string_tpye){
-        switch (string_tpye)
-        {
+      switch (string_tpye){
         case ColorType::Green:{
-            return "Green";
-
-        }
-        
+          return "Green";
+      }
         case ColorType::Blue:{
-
-            return "Blue";
-        }
-        }
+          return "Blue";
+      }
+      }
 
     }
     //绘制
-    Mat draw_contours(const Mat &image,Scalar &down,Scalar &up){
+     void draw_contours(const Mat &image,Scalar down,Scalar up){
         Mat img_a ,img_b,img_c;
         image.copyTo(img_a);
         vector<vector<Point>> contours;
-          vector<Vec4i> value;
-        cvtColor(image,img_b,COLOR_BGR2HSV);
+        vector<Vec4i> value;
+        cvtColor(img_a,img_b,COLOR_BGR2HSV);
         inRange(img_b,down,up,img_b);
-        Mat kernel, kernel_d;
-        kernel=getStructuringElement(1,Size(3,15));
-        kernel_d=getStructuringElement(1,Size(20,20));
+        Mat kernel=getStructuringElement(1,Size(3,15));
+        Mat kernel_d=getStructuringElement(1,Size(20,20));
         morphologyEx(img_b,img_b,0,kernel_d,Point(-1,-1),2);
         morphologyEx(img_b,img_b,1,kernel,Point(-1,-1),5);
         findContours(img_b,contours,value,3,2,Point());
-        for(int i=0;i<contours.size();i++){
-            double area;
-            RotatedRect m_rect=minAreaRect(contours[i]);
-            Point2f a_point[4];
-            m_rect.points(a_point);
-            area=contourArea(contours[i]);
-            if (area>5000){
-                for(int j=0;j<4;j++){
-                    if(j==3){
-                        line(img_a,a_point[j],a_point[0],Scalar(255,255,255),2,8);
-                        break;
-                    }
-                    line(img_a,a_point[j],a_point[j+1],Scalar(255,255,255),2,8);       
-                }
+        for(int i = 0;i < contours.size(); i++){
+          RotatedRect m_rect=minAreaRect(contours[i]);
+          Point2f a_point[4];
+          m_rect.points(a_point);
+          double area=contourArea(contours[i]);
+          if (area>5000) {
+            for (int  j=0;j<4;j++) {
+              if (j==3) {
+                line(image,a_point[j],a_point[0],Scalar(255,255,255),2,8);
+                break;
+              }
+                line(image,a_point[j],a_point[j+1],Scalar(255,255,255),2,8);       
             }
-        }
-        return img_a;
+          }
+      }
     }
     Mat detect_color(const Mat &image,const ColorType &color_type){
-        Scalar down,up;
         Mat back_img;
-        if(color_type==ColorType::Blue){   
-            down=Scalar(105,170,46);
-            up=Scalar(112,255,255);
-            back_img=draw_contours(image,down,up);
-        }
-        if(color_type==ColorType::Green){ 
-            down=Scalar(70,75,46);
-            up=Scalar(85,255,255);
-            back_img=draw_contours(image,down,up);
+        if (color_type==ColorType::Blue) {   
+          Scalar down=Scalar(105,170,46);
+          Scalar up=Scalar(112,255,255);
+          draw_contours(image,down,up);
+        }else if (color_type==ColorType::Green) { 
+          Scalar down=Scalar(70,75,46);
+          Scalar up=Scalar(85,255,255);  
+          draw_contours(image,down,up);
         }
         return back_img;
     }
     int hue,fullity,value,range_hue,range_fullity,range_value;
-    // Scalar hsv_up,hsv_lower;
     Scalar hsv_lower=Scalar(hue,fullity,value);
     Scalar hsv_up=Scalar(hue+range_hue,fullity+range_fullity,value+range_value);
     static  void Change_value(int number_v,void*){
@@ -104,8 +94,8 @@ namespace detect::color{
         createTrackbar("range_hue","show_b",&range_hue,255,Change_range_hue);
         createTrackbar("range_fullity","show_b",&range_fullity,255,Change_range_fullity);
         createTrackbar("range_value","show_b",&range_value,255,Change_range_value);
-        back_img=draw_contours(image,hsv_lower,hsv_up);
-        imshow("show_b",back_img);
+        draw_contours(image,hsv_lower,hsv_up);
+        // imshow("show_b",back_img);
     }
 
-}
+}//namespace detect::color

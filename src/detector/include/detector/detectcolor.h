@@ -13,3 +13,4 @@ Mat detect_color(const Mat &image,const ColorType &color_type);
 // static void Detect(int num_A);
 void bar_detectcolor(Mat &image);
 }
+//namespace detect::color
