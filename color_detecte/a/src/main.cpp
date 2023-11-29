@@ -29,8 +29,9 @@ int main(int argc,char* argv[]){
                 break;
             }
             detect::color::ColorType type= detect::color::ColorType::Green;
-            img=detect::color::detect_color(frame,type);
-            imshow("展示",img);
+            // img=detect::color::detect_color(frame,type);
+            // imshow("展示",img);
+            detect::color::bar_detectcolor(frame);
             //循环十次输出一次日志;
             LOG_EVERY_N(INFO,10)<<fmt::format("成功检测到{}",color);
             waitKey(0);    
