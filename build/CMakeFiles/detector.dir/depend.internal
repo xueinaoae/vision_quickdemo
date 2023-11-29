@@ -3,7 +3,7 @@
 
 CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o
  ../src/detector/include/detector/detectcolor.h
- /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/src/detectcolor.cpp
+ /home/mayuqi/桌面/vision_quickdemo/src/detector/src/detectcolor.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -107,11 +107,11 @@ CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
 CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o
  ../src/google_logger/include/google_logger/google_logger.h
- /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/src/google_logger.cpp
+ /home/mayuqi/桌面/vision_quickdemo/src/google_logger/src/google_logger.cpp
 CMakeFiles/detector.dir/src/main.cpp.o
  ../src/detector/include/detector/detectcolor.h
  ../src/google_logger/include/google_logger/google_logger.h
- /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/main.cpp
+ /home/mayuqi/桌面/vision_quickdemo/src/main.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp

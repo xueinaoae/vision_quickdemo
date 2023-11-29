@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/include/detector -I/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/include/google_logger -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/mayuqi/桌面/vision_quickdemo/src/detector/include/detector -I/home/mayuqi/桌面/vision_quickdemo/src/google_logger/include/google_logger -isystem /usr/local/include/opencv4 
 

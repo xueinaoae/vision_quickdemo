@@ -4,10 +4,11 @@
 #include<opencv2/opencv.hpp>
 #include<iostream>
 using namespace cv;
-int main(int argc,char* argv[]){
+int main(int argc,char* argv[0]){
+    GLOG::configure::glogcreate("test");
     namedWindow("展示",WINDOW_AUTOSIZE);
-    int filepath=0;
-    // std::string filepath="../video/hun.mp4";
+    // int filepath=0;
+    std::string filepath="../video/hun1.mp4";
     std::string color=detect::color::To_string(detect::color::ColorType::Green);
     VideoCapture cap(filepath);
     if(cap.isOpened()){

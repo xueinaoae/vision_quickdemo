@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/src/detectcolor.cpp" "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o"
-  "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/src/google_logger.cpp" "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o"
-  "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/main.cpp" "/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles/detector.dir/src/main.cpp.o"
+  "/home/mayuqi/桌面/vision_quickdemo/src/detector/src/detectcolor.cpp" "/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o"
+  "/home/mayuqi/桌面/vision_quickdemo/src/google_logger/src/google_logger.cpp" "/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o"
+  "/home/mayuqi/桌面/vision_quickdemo/src/main.cpp" "/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/detector.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

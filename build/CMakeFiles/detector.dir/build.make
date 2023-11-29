@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mayuqi/桌面/vision_quickdemo/color_detecte/a
+CMAKE_SOURCE_DIR = /home/mayuqi/桌面/vision_quickdemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build
+CMAKE_BINARY_DIR = /home/mayuqi/桌面/vision_quickdemo/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/detector.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/detector.dir/flags.make
 
 CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o: ../src/detector/src/detectcolor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/src/detectcolor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/src/detector/src/detectcolor.cpp
 
 CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/src/detectcolor.cpp > CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/src/detector/src/detectcolor.cpp > CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.i
 
 CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/detector/src/detectcolor.cpp -o CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/src/detector/src/detectcolor.cpp -o CMakeFiles/detector.dir/src/detector/src/detectcolor.cpp.s
 
 CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o: ../src/google_logger/src/google_logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/src/google_logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/src/google_logger/src/google_logger.cpp
 
 CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/src/google_logger.cpp > CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/src/google_logger/src/google_logger.cpp > CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.i
 
 CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/google_logger/src/google_logger.cpp -o CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/src/google_logger/src/google_logger.cpp -o CMakeFiles/detector.dir/src/google_logger/src/google_logger.cpp.s
 
 CMakeFiles/detector.dir/src/main.cpp.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detector.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/main.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detector.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/detector.dir/src/main.cpp.o -c /home/mayuqi/桌面/vision_quickdemo/src/main.cpp
 
 CMakeFiles/detector.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/main.cpp > CMakeFiles/detector.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayuqi/桌面/vision_quickdemo/src/main.cpp > CMakeFiles/detector.dir/src/main.cpp.i
 
 CMakeFiles/detector.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/src/main.cpp -o CMakeFiles/detector.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayuqi/桌面/vision_quickdemo/src/main.cpp -o CMakeFiles/detector.dir/src/main.cpp.s
 
 # Object files for target detector
 detector_OBJECTS = \
@@ -127,7 +127,7 @@ detector: /usr/local/lib/libopencv_flann.so.4.5.0
 detector: /usr/local/lib/libopencv_imgproc.so.4.5.0
 detector: /usr/local/lib/libopencv_core.so.4.5.0
 detector: CMakeFiles/detector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable detector"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/detector.dir/clean:
 .PHONY : CMakeFiles/detector.dir/clean
 
 CMakeFiles/detector.dir/depend:
-	cd /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mayuqi/桌面/vision_quickdemo/color_detecte/a /home/mayuqi/桌面/vision_quickdemo/color_detecte/a /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build /home/mayuqi/桌面/vision_quickdemo/color_detecte/a/build/CMakeFiles/detector.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mayuqi/桌面/vision_quickdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mayuqi/桌面/vision_quickdemo /home/mayuqi/桌面/vision_quickdemo /home/mayuqi/桌面/vision_quickdemo/build /home/mayuqi/桌面/vision_quickdemo/build /home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/detector.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detector.dir/depend
 
