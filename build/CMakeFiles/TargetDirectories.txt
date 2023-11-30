@@ -1,3 +1,0 @@
-/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/rebuild_cache.dir
-/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/edit_cache.dir
-/home/mayuqi/桌面/vision_quickdemo/build/CMakeFiles/detector.dir
