@@ -7,8 +7,7 @@ using namespace cv;
 int main(int argc,char* argv[0]){
     GLOG::configure::glogcreate("test");
     namedWindow("展示",WINDOW_AUTOSIZE);
-    // int filepath=0;
-    std::string filepath="../video/hun.mp4";
+    int filepath=0;
     std::string color=detect::color::To_string(detect::color::ColorType::Green);
     VideoCapture cap(filepath);
     if (cap.isOpened()) {
@@ -28,8 +27,7 @@ int main(int argc,char* argv[0]){
             LOG(INFO)<<"finshed";
             break;
         }
-        detect::color::bar_detectcolor(frame);
-        imshow("show_b",frame);
+        detect::color::detect_color(frame,detect::color::ColorType::self_defined);
         //循环十次输出一次日志;
         LOG_EVERY_N(INFO,10)<<fmt::format("成功检测到{}",color);
         waitKey(0);    

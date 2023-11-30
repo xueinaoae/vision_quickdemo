@@ -10,7 +10,6 @@ enum ColorType{
 };
 std::string To_string(const ColorType &string_type);
 Mat detect_color(const Mat &image,const ColorType &color_type);
-// static void Detect(int num_A);
-void bar_detectcolor(Mat &image);
+Mat  bar_detectcolor(const Mat &image);
 }
 //namespace detect::color
