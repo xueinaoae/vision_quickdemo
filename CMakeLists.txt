@@ -9,7 +9,9 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/src/dete
 find_package(OpenCV REQUIRED)
 find_package(glog REQUIRED)
 find_package(fmt REQUIRED)
+find_package(Threads REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC 
         ${OpenCV_LIBS} 
         glog::glog
-        fmt::fmt)
+        fmt::fmt
+        Threads::Threads)

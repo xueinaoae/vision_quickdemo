@@ -4,6 +4,7 @@
 #include<string>
 #include<vector>
 #include<fmt/core.h>
+#include<mutex>
 using namespace cv;
 using namespace std;
 
@@ -95,8 +96,7 @@ namespace detect::color{
        
         hsv_up=Scalar(hue+range_hue,fullity+number_b,value+range_value);
     }
-    static void Change_range_value(int number_c,void*){
-       
+    static void Change_range_value(int number_c,void*){ 
         hsv_up=Scalar(hue+range_hue,fullity+range_fullity,value+number_c);
     }
     Mat bar_detectcolor(const Mat &image){
@@ -113,3 +113,18 @@ namespace detect::color{
     }
 
 }//namespace detect::color
+void Filetrackle::InFile(){
+        VideoWriter writer(filename,codes,Fps,size,Iscolor);
+        while(1){
+            if(!my_file.empty()){
+                mutex_a.lock();
+                writer.write(my_file.front());
+	            my_file.erase(my_file.begin());
+                cout<<"存储一次成功"<<endl;
+                mutex_a.unlock();
+            }else{
+                cout<<"正在读取中"<<endl;
+            }
+        };
+    
+}
