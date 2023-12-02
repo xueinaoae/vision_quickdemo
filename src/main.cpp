@@ -29,6 +29,7 @@ int main(int argc,char* argv[0]){
     );
     cap.read(frame);
     Filetrackle handlefile(storagepath,25,frame.type()==CV_8UC3,VideoWriter::fourcc('M', 'J', 'P', 'G'),file,frame.size());
+    //add_thread
     thread myjob(&Filetrackle::InFile,&handlefile);
     while (1)
     {
@@ -40,12 +41,13 @@ int main(int argc,char* argv[0]){
         }
         img=detect::color::detect_color(frame,detect::color::ColorType::self_defined);
         imshow("self_defined",img);
+        //lock
         handlefile.mutex_a.lock();
         cout<<"读取一次成功"<<endl;
         handlefile.my_file.push_back(img);
+        //unlock
         handlefile.mutex_a.unlock();
         waitKey(25);
-       
         //循环十次输出一次日志;
         LOG_EVERY_N(INFO,10)<<fmt::format("成功检测到{}",color);
     }
